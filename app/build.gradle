@@ -17,7 +17,9 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
-
+plugins {
+  id "org.sonarqube" version "2.6"
+}
 android {
     compileSdkVersion rootProject.compileSdkVersion
     defaultConfig {
