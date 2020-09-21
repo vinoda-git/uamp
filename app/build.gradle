@@ -25,10 +25,7 @@ android {
         applicationId "com.example.android.uamp.next"
         versionCode 1
         versionName "1.0"
-        plugins {
-  id "org.sonarqube" version "2.6"
-}
-
+       
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
 
@@ -50,6 +47,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+}
+plugins {
+  id "org.sonarqube" version "2.6"
 }
 
 dependencies {
