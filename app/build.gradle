@@ -18,15 +18,16 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
-plugins {
-  id "org.sonarqube" version "2.6"
-}
+
 android {
     compileSdkVersion rootProject.compileSdkVersion
     defaultConfig {
         applicationId "com.example.android.uamp.next"
         versionCode 1
         versionName "1.0"
+        plugins {
+  id "org.sonarqube" version "2.6"
+}
 
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
